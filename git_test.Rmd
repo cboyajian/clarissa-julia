@@ -15,6 +15,7 @@ library(palmerpenguins)
 ```{r}
 ggplot(data = penguins, aes(x = species, y = body_mass_g)) +
   geom_violin(aes(fill = species)) +
-  scale_fill_manual(values = c("cyan4", "navy", "goldenrod"))
+  scale_fill_manual(values = c("cyan4", "navy", "goldenrod")) +
+  theme_dark()
 ```
 
